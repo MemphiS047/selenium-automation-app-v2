@@ -1,0 +1,1 @@
+(Get-Item "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe").VersionInfo.ProductVersion

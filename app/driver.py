@@ -12,6 +12,7 @@ from selenium import webdriver
 from selenium.common.exceptions import SessionNotCreatedException
 from selenium.webdriver.firefox.options import Options
 
+
 from utils.app_utils import get_yaml_resource
 from utils.driver_utils import (get_chrome_version, get_firefox_version,
                                 get_msedge_version, get_site_links, uncompress)
@@ -35,6 +36,10 @@ logger.addHandler(file)
 logger.addHandler(logging.StreamHandler(sys.stdout))
 
 class Driver():
+    """
+    Super class for driver contains several properties and methods 
+    that are used in subclasses : MSEdge, Firefox, Chrome
+    """
 
     _OS = ""
     _driver_installed_path = ""
@@ -169,6 +174,9 @@ class Driver():
             exit()
 
 class Chrome(Driver):
+    """
+    Chrome subclass
+    """
     _webdriver = None
     def __init__(self):
         self._driverName = "chromedriver"
@@ -226,6 +234,9 @@ class Chrome(Driver):
         self._driver_version = compatible_version[0]
 
 class Firefox(Driver):
+    """
+    Firefox subclass
+    """
     _webdriver = None
     def __init__(self):
         self._driverName = "geckodriver"
@@ -288,6 +299,9 @@ class Firefox(Driver):
             return
 
 class MSEdge(Driver):
+    """
+    MSEdge subclass
+    """
     _webdriver = None
     def __init__(self):
         self._driverName = "msedgedriver"
@@ -343,3 +357,5 @@ class MSEdge(Driver):
             logger.info("[driver] Exiting...")
             exit()
         return driver
+
+chrome = Chrome()
