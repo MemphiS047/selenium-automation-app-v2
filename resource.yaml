@@ -1,0 +1,30 @@
+---
+install_links : 
+  geckodriver :
+    linux : https://github.com/mozilla/geckodriver/releases/download/v{0}/geckodriver-v{0}-linux32.tar.gz
+    win32 : https://github.com/mozilla/geckodriver/releases/download/v{0}/geckodriver-v{0}-win32.zip
+    mac : https://github.com/mozilla/geckodriver/releases/download/v{0}/geckodriver-v{0}-macos.tar.gz
+
+  msedgedriver : 
+    linux : https://msedgedriver.azureedge.net/{0}/edgedriver_arm64.zip
+    win32 : https://msedgedriver.azureedge.net/{0}/edgedriver_win32.zip
+    mac : https://msedgedriver.azureedge.net/{0}/edgedriver_mac64.zip
+
+  chromedriver :
+    linux : https://chromedriver.storage.googleapis.com/{0}/chromedriver_linux64.zip
+    win32 : https://chromedriver.storage.googleapis.com/{0}/chromedriver_win32.zip
+    mac : https://chromedriver.storage.googleapis.com/{0}/chromedriver_mac64.zip
+
+version_links : 
+  chrome : https://sites.google.com/a/chromium.org/chromedriver/downloads
+  firefox : https://github.com/mozilla/geckodriver/releases
+  msedge : https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+
+test_links : 
+  hepsiburada : https://giris.hepsiburada.com/?ReturnUrl=https%3A%2F%2Foauth.hepsiburada.com%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3DSPA%26redirect_uri%3Dhttps%253A%252F%252Fwww.hepsiburada.com%252Fuyelik%252Fcallback%26response_type%3Dcode%26scope%3Dopenid%2520profile%26state%3D77c6c04e5fed480590ad71f7e9b2a518%26code_challenge%3DVFcPs5anc7SlleYd8JstDq7w0T8_Flza_clsp4aaex0%26code_challenge_method%3DS256%26response_mode%3Dquery%26ActivePage%3DPURE_LOGIN%26oidcReturnUrl%3Dhttps%253A%252F%252Fwww.hepsiburada.com%252F
+  trendyol : https://www.trendyol.com/giris?cb=https%3A%2F%2Fwww.trendyol.com%2Fgiris%3Fcb%3Dhttps%253A%252F%252Fwww.trendyol.com%252F
+  n11 : https://www.n11.com/giris-yap
+  facebook : https://tr-tr.facebook.com/
+  gittigidiyor : https://www.gittigidiyor.com/uye-girisi
+  yemeksepeti : https://www.yemeksepeti.com/istanbul?affiliateid=gabr2612&cid=gabr2612&gclid=EAIaIQobChMI5P3vqtuz8gIVYxoGAB3stQahEAAYASAAEgKgA_D_BwE
+  sahibinden : https://secure.sahibinden.com/giris 

@@ -1,0 +1,6 @@
+n11 :
+  n11_add_to_card :
+    - login -login -password
+    - goto type -Elektronik
+    - goto category -Bilgisayar
+    - add -Western Digital WD2500AVVS 250 GB HDD

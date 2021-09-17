@@ -1,0 +1,10 @@
+# Driver content
+python-geckodriver-autoinstaller
+0.29.0
+
+# Logs
+app.log
+geckodriver.log
+
+# Cache
+__pycache__
